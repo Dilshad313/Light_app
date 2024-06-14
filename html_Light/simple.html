@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>simple webpage!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="menu.png" class="menu-img">
+                <img src="logo.jpeg" class="logo">
+                <ul>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="">Modern</a></li>
+                    <li><a href="">Contentporacy</a></li>
+                    <li><a href="">Affordable</a></li>
+                </ul>
+                <button type="buttons" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+
+            <div class="lamp-container">
+                <img src="light.png" class="lamp" id="light">
+                <img src="" class="light">
+            </div>
+            <div class="text-container">
+                
+                <h1>Latest<br> in Lighting</h1><br>
+                <p>This is the first lamp from our company.
+                    We'are making a huge collection of modern Lamps in all categories in home
+                    use to office use.<br><br> 
+                </p>
+                <a href="html2/index.html">Check all collections</a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+                </div>
+                
+            </div>
+
+        </div>
+        <script>
+            var btn=document.getElementById("btn");
+            /*var btn=document.getElementById("light");*/
+
+            function toggleBtn(){
+                btn.classList.toggle("active");
+                light.classList.toggle("on");
+            }
+        </script>
+    </body>
+</html>
